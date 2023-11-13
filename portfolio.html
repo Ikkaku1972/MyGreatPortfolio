@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        .center-text {
+            text-align: center;
+        }
+        /* サムネイルのスタイルを追加 */
+        figure img {
+            border-radius: 10px; /* 角を丸める */
+            width: 320px; /* 幅を指定 */
+            height: 180px; /* 高さを指定 (16:9の比率) */
+            object-fit: cover; /* 画像が指定された寸法に合わない場合の処理 */
+        }
+    </style>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>ポートフォリオ</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <div class="center-text">
+                    <h2>私の作品</h2>
+                    <h3>ごゆるりとお過ごしください</h3>
+                </div>
+                <div>
+                    <!-- サムネイルと動画リンクの例 -->
+                    <figure>
+                        <img src="https://via.placeholder.com/150" alt="作品1のサムネイル">
+                        <figcaption><a href="https://youtu.be/-oqbovtBSWk" target="_blank">作品1</a></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://via.placeholder.com/150" alt="作品2のサムネイル">
+                        <figcaption><a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">作品2</a></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://via.placeholder.com/150" alt="作品3のサムネイル">
+                        <figcaption><a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">作品3</a></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://via.placeholder.com/150" alt="作品4のサムネイル">
+                        <figcaption><a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">作品4</a></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://via.placeholder.com/150" alt="作品5のサムネイル">
+                        <figcaption><a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">作品5</a></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://via.placeholder.com/150" alt="作品6のサムネイル">
+                        <figcaption><a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">作品6</a></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://via.placeholder.com/150" alt="作品7のサムネイル">
+                        <figcaption><a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">作品7</a></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://via.placeholder.com/150" alt="作品8のサムネイル">
+                        <figcaption><a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">作品8</a></figcaption>
+                    </figure>
+                </div>
+            </section>
+        </div>
+    </main>
+    <section aria-label="Subscribe example">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>コンタクト</h2>
+                    <h3>お問い合わせはこちら</h3>
+                </hgroup>
+                <form class="grid">
+                    <input type="text" id="firstname" name="firstname" placeholder="お名前" aria-label="お名前" required>
+                    <input type="email" id="email" name="email" placeholder="メールアドレス" aria-label="メールアドレス" required>
+                    <button type="submit" onclick="event.preventDefault()">送信</button>
+                </form>
+            </article>
+        </div>
+    </section>
+    <footer class="container">
+        <small>
+            <a href="#">プライバシーポリシー</a> • <a href="#">利用規約</a>
+        </small>
+    </footer>
+</body>
+</html>
